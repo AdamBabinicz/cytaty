@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="DESCRIPTION" content="Zapraszam na moją pierwszą stronę, którą zrobiłem dla Was i dla siebie." />
+	<meta name="language" content="pl">
+	<title>Biblia Twoim przewodnikiem w życiu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    *,
+		html {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: calc(.8rem + 1vw);
+            text-align: center;
+            box-sizing: border-box;
+		}
+
+		body {
+            background-image: url(Ch.jpg);
+            background-position: top center;
+            background-size: auto;
+            background-repeat: no-repeat;
+           overflow: hidden;
+			
+			
+			
+            display: flex;
+            flex-direction: column;
+            line-height: 2.5rem;
+            align-items: center;
+            color: white;
+		}
+   
+    h1 {
+        margin-top: 2rem;
+        font-size: 3rem;
+    }
+        .btn {
+	position: absolute;
+	height: 2rem;
+    bottom: .5rem;
+    top: 90%;
+    left: 50%;
+ 
+    transform: translate(-50%, -50%);
+	font-size: 1rem;
+    line-height: 1rem;        
+    padding: 0 1rem;
+    
+ 
+   
+}
+.quotes-box {
+	background: rgba(149, 149, 149, 0.67);
+    margin: 0 auto;
+	justify-content: center;
+	padding: 30px;
+	
+	border-radius: 10px;
+	color: white;
+}
+.quotes-box p {
+	margin: 0px;
+	text-align: center;
+	font-family: Pristina, sans-serif;
+	font-size: 1.2rem;
+	
+}
+.quotes-box .author {
+	margin-top: 2rem; 
+}
+#target:before {
+	content: '" ';
+}
+#target:after {
+	content: ' "';
+}
+#author:before {
+	content: '-- ';
+}
+</style>
+    
+</head>
+    <body>
+    
+    <h1>Cytaty z Biblii</h1>
+        <p>Kieruj się słowami Pisma Świętego, a nigdy nie zbłądzisz!</p>
+        Wybierz cytat dla siebie:
+        
+            
+        <div class="quotes-box">
+					<p class="quote" id="target"></p>
+					<p class="author" id="author"></p>
+				</div>
+        
+        
+        <button class="btn" id="action">Kliknij</button>
+    <script>
+        var quotes = ["O nic się już zbytnio nie troskajcie, ale w każdej sprawie wasze prośby przedstawiajcie Bogu w modlitwie i błaganiu z dziękczynieniem! A pokój Boży, który przewyższa wszelki umysł, będzie strzegł waszych serc i myśli w Chrystusie Jezusie. @Flp 4, 6-7",
+                      "Niech się nie trwoży serce wasze. Wierzycie w Boga? I we Mnie wierzcie! @J 14,1",
+                      "Pan podtrzymuje wszystkich, którzy padają i podnosi wszystkich zgnębionych. @Ps 145, 15",
+                      "Cierpliwy do czasu dozna przykrości, ale później radość dla niego zakwitnie. @Syr 1, 23",
+                      "Ja zaś jestem ubogi i nędzny, ale Pan troszczy sie o mnie. Ty jesteś wspomożycielem moim i wybawca; Boże mój, nie zwlekaj! @Ps 40, 18",
+                      "Ufność, którą w Nim pokładamy, polega na przekonaniu, że wysłuchuje On wszystkich naszych próśb zgodnych z Jego wolą. A jeśli wiemy, że wysłuchuje wszystkich naszych próśb, pewni jesteśmy również posiadania tego, o cośmy Go prosili. @1 J 5, 14-15",
+                      "Wszystkie troski wasze przerzućcie na Niego, gdyż Jemu zależy na was. @1 P 5, 7",
+                      "Przewlekłe czekanie jest raną dla duszy, ziszczone pragnienie jest drzewem życia. @(Prz 13:12)",
+                      "Proście, a będzie wam dane; szukajcie, a znajdziecie; kołaczcie, a otworzą wam. @(Mt 7:7)",
+                      "Kto w drobnej rzeczy jest wierny, ten i w wielkiej będzie wierny; a kto w drobnej rzeczy jest nieuczciwy, ten i w wielkiej nieuczciwy będzie. @(Lu 16:10)",
+                      "Albowiem zapłatą za grzech jest śmierć, a łaska przez Boga dana to życie wieczne w Chrystusie Jezusie, Panu naszym. @Rz 6, 23",
+                      "Ci bowiem, którzy żyją według ciała, dążą do tego, czego chce ciało; ci zaś, którzy żyją według Ducha - do tego, czego chce Duch. Dążność bowiem ciała prowadzi do śmierci, dążność zaś Ducha - do życia i pokoju. @Rz 8, 5-6",
+                      "Nikomu nie bądźcie nic dłużni poza wzajemną miłością. Kto bowiem miłuje bliźniego, wypełnił Prawo. @Rz 13, 8",
+                      
+];
+var body = '';
+var author = '';
+function selectQuote(){
+	var index = Math.floor(Math.random() * quotes.length);
+	var quote = quotes[index].split('@');
+	body = quote[0];
+	author = quote[1];
+	document.querySelector('#target').innerHTML = body;
+	document.getElementById('author').innerHTML = author;
+	console.log(body);
+	return true;
+}
+
+var tweetquote = function(){
+	var tweetText = body + ' --' + author;
+	var tweetLink = 'https://twitter.com/intent/tweet?text=' + tweetText;
+	if(tweetText.length > 140){
+		alert('Sorry, this quote is too long to be tweeted ( > 140 characters).')
+	}else {
+		window.open(tweetLink, '_blank');
+	}
+}
+selectQuote();
+document.getElementById('action').addEventListener('click', selectQuote);
+document.getElementById('tweet-button').addEventListener('click', tweetquote);
+    </script>   
+    </body>
+</html>
