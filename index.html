@@ -8,6 +8,7 @@
 	<meta name="language" content="pl">
 	<title>Biblia Twoim przewodnikiem w życiu</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
 <style>
     *,
 		html {
@@ -24,7 +25,7 @@
             background-position: top center;
             background-size: auto;
             background-repeat: no-repeat;
-           overflow: hidden;
+            overflow: hidden;
 			
 			
 			
@@ -36,8 +37,12 @@
 		}
    
     h1 {
+        font-family: 'ryeregular';
         margin-top: 2rem;
         font-size: 3rem;
+    }
+    body {
+        font-family: 'Atomic Age', cursive;
     }
         .btn {
 	position: absolute;
@@ -45,7 +50,7 @@
     bottom: .5rem;
     top: 90%;
     left: 50%;
- 
+    font-family: 'Atomic Age', cursive;
     transform: translate(-50%, -50%);
 	font-size: 1rem;
     line-height: 1rem;        
@@ -66,8 +71,8 @@
 .quotes-box p {
 	margin: 0px;
 	text-align: center;
-	font-family: Pristina, sans-serif;
-	font-size: 1.2rem;
+	font-family: 'Kalam', cursive;
+	font-size: 1rem;
 	
 }
 .quotes-box .author {
@@ -82,14 +87,27 @@
 #author:before {
 	content: '-- ';
 }
+    @font-face {
+    font-family: 'ryeregular';
+    src: url('./Rye/rye-regular-webfont.woff2') format('woff2'),
+         url('./Rye/rye-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+    @font-face {
+			font-family: 'Atomic Age', cursive;
+			
+			src: url('./Atomic_Age/atomicage-regular-webfont.woff2');
+		}
 </style>
     
 </head>
     <body>
     
-    <h1>Cytaty z Biblii</h1>
+    <h1>CYTATY z BIBLII</h1>
         <p>Kieruj się słowami Pisma Świętego, a nigdy nie zbłądzisz!</p>
-        Wybierz cytat dla siebie:
+        Wybierz cytat na dzień:
         
             
         <div class="quotes-box">
