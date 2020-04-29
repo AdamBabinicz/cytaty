@@ -1,350 +1,422 @@
 <!DOCTYPE html>
 <html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="DESCRIPTION"
+      content="Gdy patrzę na Twe niebo, dzieło Twych palców, księżyc i gwiazdy, któreś Ty utwierdził: 
+ czym jest człowiek, że o nim pamiętasz, i czym - syn człowieczy, że się nim zajmujesz?"
+    />
+    <meta name="language" content="pl" />
+    <title>Biblia Twoim przewodnikiem w życiu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://slowoboze.netlify.app/favicon.ico"
+    />
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="img/png"
+      sizes="192x192"
+      href="android-icon-192x192.png"
+    />
+    <link rel="icon" type="img/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="img/png" sizes="96x96" href="favicon-96x96.png" />
+    <link rel="icon" type="img/png" sizes="16x16" href="favicon-16x16.png" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Biblia" />
+    <meta property="og:url" content="https://slowoboze.netlify.app" />
+    <meta property="og:image" content="https://slowoboze.netlify.app/Ch.jpg" />
+    <meta property="profile:first_name" content="Jezus" />
+    <meta property="profile:last_name" content="Chrystus" />
+    <style>
+      *,
+      html {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: calc(0.8rem + 1vw);
+        text-align: center;
+        box-sizing: border-box;
+      }
+      body {
+        background-image: url(Ch.jpg);
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat, no-repeat;
+        background-color: rgba(74, 33, 4, 0.9);
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+        line-height: 2.5rem;
+        align-items: center;
+        color: white;
+        font-family: "Metamorphous", cursive;
+        font-size: 1rem;
+      }
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="DESCRIPTION" content="Gdy patrzę na Twe niebo, dzieło Twych palców, księżyc i gwiazdy, któreś Ty utwierdził: 
- czym jest człowiek, że o nim pamiętasz, i czym - syn człowieczy, że się nim zajmujesz?" />
-	<meta name="language" content="pl">
-	<title>Biblia Twoim przewodnikiem w życiu</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/x-icon" href="https://slowoboze.000webhostapp.com/favicon.ico" />
-     <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
-<link rel="icon" type="img/png" sizes="192x192"  href="android-icon-192x192.png">
-<link rel="icon" type="img/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="img/png" sizes="96x96" href="favicon-96x96.png">
-<link rel="icon" type="img/png" sizes="16x16" href="favicon-16x16.png">
-	<meta property="og:type" content="profile">
-	<meta property="og:title" content="Biblia">
-	<meta property="og:url" content="https://slowoboze.000webhostapp.com/">
-	<meta property="og:image" content="https://slowoboze.000webhostapp.com/Ch.jpg">
-	<meta property="profile:first_name" content="Jezus">
-	<meta property="profile:last_name" content="Chrystus">
-	<style>
-		*,
-		html {
-			margin: 0;
-			padding: 0;
-			border: 0;
-			font-size: calc(.8rem + 1vw);
-			text-align: center;
-			box-sizing: border-box;
+      h1 {
+        font-family: "Cantora One", sans-serif;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+        font-size: 3rem;
+        font-weight: lighter;
+      }
 
-		}
+      h2 {
+        margin-bottom: 1rem;
+        font-family: "Metamorphous", cursive;
+        font-size: 1rem;
+      }
 
-		body {
-			background-image: url(Ch.jpg);
-			background-attachment: fixed;
-			background-position: center center;
-            background-size: cover;
-			background-repeat: no-repeat, no-repeat;
-            background-color: rgba(74, 33, 4, 0.9);
-			overflow-y: scroll;
-			display: flex;
-			flex-direction: column;
-			line-height: 2.5rem;
-			align-items: center;
-			color: white;
-            font-family: 'Metamorphous', cursive;
-			font-size: 1rem;
-		}
+      .btn {
+        /*	position: absolute;*/
+        height: 2rem;
+        margin: 4rem 0 auto;
+        font-family: "Metamorphous", cursive;
+        font-size: 1rem;
+        line-height: 1rem;
+        padding: 0 1rem;
+        transition: all 0.5s;
+      }
+      .btn:hover {
+        cursor: pointer;
+        opacity: 0.7;
+      }
+      .quotes-box {
+        background: rgba(149, 149, 149, 0.67);
+        margin-top: 2.5rem;
+        padding: 1rem;
+        border-radius: 10px;
+        color: white;
+        line-height: 1.5rem;
+      }
 
-		h1 {
-			font-family: 'Cantora One', sans-serif;
-			margin-top: 2rem;
-			margin-bottom: 1.5rem;
-			font-size: 3rem;
-			font-weight: lighter;
-		}
+      .quotes-box p {
+        margin: 0px;
+        text-align: center;
+        font-family: "Kalam", cursive;
+        font-size: 1rem;
+      }
 
-		
+      .author {
+        margin-top: 0.5rem;
+      }
 
-		h2 {
-			margin-bottom: 1rem;
-			font-family: 'Metamorphous', cursive;
-			font-size: 1rem;
-		}
+      #target:before {
+        content: '" ';
+      }
 
-		.btn {
-			/*	position: absolute;*/
-			height: 2rem;
-			margin: 4rem 0 auto;
-            
-			font-family: 'Metamorphous', cursive;
+      #target:after {
+        content: ' "';
+      }
 
-			font-size: 1rem;
-			line-height: 1rem;
-			padding: 0 1rem;
+      #author:before {
+        content: "-- ";
+      }
 
-		}
+      /* latin-ext */
 
-		.quotes-box {
-			background: rgba(149, 149, 149, 0.67);
-			margin-top: 2.5rem;
-			
-			padding: 1rem;
-			border-radius: 10px;
-			color: white;
-			line-height: 1.5rem;
-		}
+      @font-face {
+        font-family: "Cantora One";
+        font-style: normal;
+        font-weight: 400;
+        src: local("Cantora One"), local("CantoraOne-Regular"),
+          url(https://fonts.gstatic.com/s/cantoraone/v7/gyB4hws1JdgnKy56GB_JX5zUbYrpVQ.woff2)
+            format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
 
-		.quotes-box p {
-			margin: 0px;
-			text-align: center;
-			font-family: 'Kalam', cursive;
-			font-size: 1rem;
+      /* latin */
 
-		}
+      @font-face {
+        font-family: "Cantora One";
+        font-style: normal;
+        font-weight: 400;
+        src: local("Cantora One"), local("CantoraOne-Regular"),
+          url(https://fonts.gstatic.com/s/cantoraone/v7/gyB4hws1JdgnKy56GB_JX5zabYo.woff2)
+            format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
 
-		
+      /* devanagari */
 
-		.author {
-			margin-top: .5rem;
-		}
+      @font-face {
+        font-family: "Kalam";
+        font-style: normal;
+        font-weight: 300;
+        src: local("Kalam Light"), local("Kalam-Light"),
+          url(https://fonts.gstatic.com/s/kalam/v8/YA9Qr0Wd4kDdMtD6GjLNkiQ4tg.woff2)
+            format("woff2");
+        unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
+          U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+      }
 
-		#target:before {
-			content: '" ';
-		}
+      /* latin-ext */
 
-		#target:after {
-			content: ' "';
-		}
+      @font-face {
+        font-family: "Kalam";
+        font-style: normal;
+        font-weight: 300;
+        src: local("Kalam Light"), local("Kalam-Light"),
+          url(https://fonts.gstatic.com/s/kalam/v8/YA9Qr0Wd4kDdMtD6GjLCkiQ4tg.woff2)
+            format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
 
-		#author:before {
-			content: '-- ';
-		}
+      /* latin */
 
-		/* latin-ext */
+      @font-face {
+        font-family: "Kalam";
+        font-style: normal;
+        font-weight: 300;
+        src: local("Kalam Light"), local("Kalam-Light"),
+          url(https://fonts.gstatic.com/s/kalam/v8/YA9Qr0Wd4kDdMtD6GjLMkiQ.woff2)
+            format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
 
-		@font-face {
-			font-family: 'Cantora One';
-			font-style: normal;
-			font-weight: 400;
-			src: local('Cantora One'), local('CantoraOne-Regular'), url(https://fonts.gstatic.com/s/cantoraone/v7/gyB4hws1JdgnKy56GB_JX5zUbYrpVQ.woff2) format('woff2');
-			unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-		}
+      /* devanagari */
 
-		/* latin */
+      @font-face {
+        font-family: "Kalam";
+        font-style: normal;
+        font-weight: 400;
+        src: local("Kalam"), local("Kalam-Regular"),
+          url(https://fonts.gstatic.com/s/kalam/v8/YA9dr0Wd4kDdMthQOCfzsw.woff2)
+            format("woff2");
+        unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
+          U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+      }
 
-		@font-face {
-			font-family: 'Cantora One';
-			font-style: normal;
-			font-weight: 400;
-			src: local('Cantora One'), local('CantoraOne-Regular'), url(https://fonts.gstatic.com/s/cantoraone/v7/gyB4hws1JdgnKy56GB_JX5zabYo.woff2) format('woff2');
-			unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-		}
+      /* latin-ext */
 
-		/* devanagari */
+      @font-face {
+        font-family: "Kalam";
+        font-style: normal;
+        font-weight: 400;
+        src: local("Kalam"), local("Kalam-Regular"),
+          url(https://fonts.gstatic.com/s/kalam/v8/YA9dr0Wd4kDdMthfOCfzsw.woff2)
+            format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
 
-		@font-face {
-			font-family: 'Kalam';
-			font-style: normal;
-			font-weight: 300;
-			src: local('Kalam Light'), local('Kalam-Light'), url(https://fonts.gstatic.com/s/kalam/v8/YA9Qr0Wd4kDdMtD6GjLNkiQ4tg.woff2) format('woff2');
-			unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
-		}
+      /* latin */
 
-		/* latin-ext */
+      @font-face {
+        font-family: "Kalam";
+        font-style: normal;
+        font-weight: 400;
+        src: local("Kalam"), local("Kalam-Regular"),
+          url(https://fonts.gstatic.com/s/kalam/v8/YA9dr0Wd4kDdMthROCc.woff2)
+            format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
 
-		@font-face {
-			font-family: 'Kalam';
-			font-style: normal;
-			font-weight: 300;
-			src: local('Kalam Light'), local('Kalam-Light'), url(https://fonts.gstatic.com/s/kalam/v8/YA9Qr0Wd4kDdMtD6GjLCkiQ4tg.woff2) format('woff2');
-			unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-		}
+      /* devanagari */
 
-		/* latin */
+      @font-face {
+        font-family: "Kalam";
+        font-style: normal;
+        font-weight: 700;
+        src: local("Kalam Bold"), local("Kalam-Bold"),
+          url(https://fonts.gstatic.com/s/kalam/v8/YA9Qr0Wd4kDdMtDqHTLNkiQ4tg.woff2)
+            format("woff2");
+        unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
+          U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+      }
 
-		@font-face {
-			font-family: 'Kalam';
-			font-style: normal;
-			font-weight: 300;
-			src: local('Kalam Light'), local('Kalam-Light'), url(https://fonts.gstatic.com/s/kalam/v8/YA9Qr0Wd4kDdMtD6GjLMkiQ.woff2) format('woff2');
-			unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-		}
+      /* latin-ext */
 
-		/* devanagari */
+      @font-face {
+        font-family: "Kalam";
+        font-style: normal;
+        font-weight: 700;
+        src: local("Kalam Bold"), local("Kalam-Bold"),
+          url(https://fonts.gstatic.com/s/kalam/v8/YA9Qr0Wd4kDdMtDqHTLCkiQ4tg.woff2)
+            format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
 
-		@font-face {
-			font-family: 'Kalam';
-			font-style: normal;
-			font-weight: 400;
-			src: local('Kalam'), local('Kalam-Regular'), url(https://fonts.gstatic.com/s/kalam/v8/YA9dr0Wd4kDdMthQOCfzsw.woff2) format('woff2');
-			unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
-		}
+      /* latin */
 
-		/* latin-ext */
+      @font-face {
+        font-family: "Kalam";
+        font-style: normal;
+        font-weight: 700;
+        src: local("Kalam Bold"), local("Kalam-Bold"),
+          url(https://fonts.gstatic.com/s/kalam/v8/YA9Qr0Wd4kDdMtDqHTLMkiQ.woff2)
+            format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
 
-		@font-face {
-			font-family: 'Kalam';
-			font-style: normal;
-			font-weight: 400;
-			src: local('Kalam'), local('Kalam-Regular'), url(https://fonts.gstatic.com/s/kalam/v8/YA9dr0Wd4kDdMthfOCfzsw.woff2) format('woff2');
-			unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-		}
+      /* latin-ext */
 
-		/* latin */
+      @font-face {
+        font-family: "Metamorphous";
+        font-style: normal;
+        font-weight: 400;
+        src: local("Metamorphous"),
+          url(https://fonts.gstatic.com/s/metamorphous/v7/Wnz8HA03aAXcC39ZEX5y133ENSqstTs.woff2)
+            format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
 
-		@font-face {
-			font-family: 'Kalam';
-			font-style: normal;
-			font-weight: 400;
-			src: local('Kalam'), local('Kalam-Regular'), url(https://fonts.gstatic.com/s/kalam/v8/YA9dr0Wd4kDdMthROCc.woff2) format('woff2');
-			unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-		}
+      /* latin */
 
-		/* devanagari */
+      @font-face {
+        font-family: "Metamorphous";
+        font-style: normal;
+        font-weight: 400;
+        src: local("Metamorphous"),
+          url(https://fonts.gstatic.com/s/metamorphous/v7/Wnz8HA03aAXcC39ZEX5y133EOyqs.woff2)
+            format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+    </style>
+  </head>
 
-		@font-face {
-			font-family: 'Kalam';
-			font-style: normal;
-			font-weight: 700;
-			src: local('Kalam Bold'), local('Kalam-Bold'), url(https://fonts.gstatic.com/s/kalam/v8/YA9Qr0Wd4kDdMtDqHTLNkiQ4tg.woff2) format('woff2');
-			unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
-		}
+  <body>
+    <h1>z BIBLII</h1>
+    <h2>
+      Kieruj się słowami Pisma Świętego, a nigdy nie zbłądzisz!<br />
+      Wybierz Słowo Boże na dzień:
+    </h2>
+    <button class="btn" id="action"><strong>Kliknij</strong></button>
 
-		/* latin-ext */
+    <div class="quotes-box">
+      <p class="quote" id="target"></p>
+      <p class="author" id="author"></p>
+    </div>
 
-		@font-face {
-			font-family: 'Kalam';
-			font-style: normal;
-			font-weight: 700;
-			src: local('Kalam Bold'), local('Kalam-Bold'), url(https://fonts.gstatic.com/s/kalam/v8/YA9Qr0Wd4kDdMtDqHTLCkiQ4tg.woff2) format('woff2');
-			unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-		}
+    <script>
+      document.body.innerHTML +=
+        '<div id="cookiesAlert" style="border-radius: .5rem .5rem 0 0;display:flex;align-items: center;padding-left:1rem;background:#ccc;color:black;height:28px;opacity:.7;position:fixed;left:11px;bottom:0;z-index:99999999;font-family:sans-serif;text-align:center;font-size:12px;">Ta strona używa plików cookies. <button style="font-size:14px;font-weight:900;border-top-right-radius:.5rem;padding:6px;border:none;background:#aaa;cursor:pointer;" id="acceptBtn" onclick="document.getElementById(\'cookiesAlert\').style.display = \'none\';">OK</button></div>';
 
-		/* latin */
+      function close() {
+        document.getElementById("cookiesAlert").style.color = "blue";
+      }
+    </script>
 
-		@font-face {
-			font-family: 'Kalam';
-			font-style: normal;
-			font-weight: 700;
-			src: local('Kalam Bold'), local('Kalam-Bold'), url(https://fonts.gstatic.com/s/kalam/v8/YA9Qr0Wd4kDdMtDqHTLMkiQ.woff2) format('woff2');
-			unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-		}
+    <script>
+      var quotes = [
+        "O nic się już zbytnio nie troskajcie, ale w każdej sprawie wasze prośby przedstawiajcie Bogu w modlitwie i błaganiu z dziękczynieniem! A pokój Boży, który przewyższa wszelki umysł, będzie strzegł waszych serc i myśli w Chrystusie Jezusie. @Flp 4, 6-7",
+        "Niech się nie trwoży serce wasze. Wierzycie w Boga? I we Mnie wierzcie! @J 14,1",
+        "Pan podtrzymuje wszystkich, którzy padają i podnosi wszystkich zgnębionych. @Ps 145, 15",
+        "Cierpliwy do czasu dozna przykrości, ale później radość dla niego zakwitnie. @Syr 1, 23",
+        "Ja zaś jestem ubogi i nędzny, ale Pan troszczy sie o mnie. Ty jesteś wspomożycielem moim i wybawca; Boże mój, nie zwlekaj! @Ps 40, 18",
+        "Ufność, którą w Nim pokładamy, polega na przekonaniu, że wysłuchuje On wszystkich naszych próśb zgodnych z Jego wolą. A jeśli wiemy, że wysłuchuje wszystkich naszych próśb, pewni jesteśmy również posiadania tego, o cośmy Go prosili. @1 J 5, 14-15",
+        "Wszystkie troski wasze przerzućcie na Niego, gdyż Jemu zależy na was. @1 P 5, 7",
+        "Przewlekłe czekanie jest raną dla duszy, ziszczone pragnienie jest drzewem życia. @(Prz 13:12)",
+        "Proście, a będzie wam dane; szukajcie, a znajdziecie; kołaczcie, a otworzą wam. @(Mt 7:7)",
+        "Kto w drobnej rzeczy jest wierny, ten i w wielkiej będzie wierny; a kto w drobnej rzeczy jest nieuczciwy, ten i w wielkiej nieuczciwy będzie. @(Lu 16:10)",
+        "Albowiem zapłatą za grzech jest śmierć, a łaska przez Boga dana to życie wieczne w Chrystusie Jezusie, Panu naszym. @Rz 6, 23",
+        "Ci bowiem, którzy żyją według ciała, dążą do tego, czego chce ciało; ci zaś, którzy żyją według Ducha - do tego, czego chce Duch. Dążność bowiem ciała prowadzi do śmierci, dążność zaś Ducha - do życia i pokoju. @Rz 8, 5-6",
+        "Nikomu nie bądźcie nic dłużni poza wzajemną miłością. Kto bowiem miłuje bliźniego, wypełnił Prawo. @Rz 13, 8",
+        "Jahwe jest moim Pasterzem. Niczego mi nie zabraknie. @ Ps 23:1",
+        "Duszę moją pokrzepia. Wiedzie mnie szlakami prawości przez wzgląd na swe imię. @Ps 23:3",
+        "Zrzuć swe brzemię na Jahwe, a on cię wesprze. Nigdy nie pozwoli, by prawy się zachwiał. @Ps 55:22",
+        "Bojaźń Pańska jest początkiem mądrości. Wspaniała zapłata dla tych, co według niej postępują, a chwała Jego trwać będzie zawsze. @Ps. 111:10",
+        "Zaufaj Panu z całego swojego serca i nie polegaj na własnym rozumie! Pamiętaj o Nim na wszystkich swoich drogach, a On prostować będzie twoje ścieżki! @Prz 3, 5-6",
+        "Pan moją mocą i tarczą! Moje serce Jemu zaufało: Doznałem pomocy, więc moje serce się cieszy i pieśnią moją Go sławię. @Ps 28, 7",
+        "Bo Pan Bóg jest słońcem i tarczą: Pan hojnie darzy łaską i chwałą, nie odmawia dobrodziejstw postępującym nienagannie. @Ps 84, 12",
+        "Nawet wróbel dom sobie znajduje i jaskółka gniazdo, gdzie złoży swe pisklęta: przy Twoich ołtarzach, Panie Zastępów, mój Królu i mój Boże! @Ps 84, 4",
+        "Wierność z ziemi wyrośnie, a sprawiedliwość wychyli się z nieba. @Ps 85, 12",
+        "Albowiem On jest naszym Bogiem, a my ludem Jego pastwiska i owcami w Jego ręku. Obyście usłyszeli dzisiaj głos Jego: @Ps 95,7",
+        "Bo ubogi nie pójdzie w zapomnienie na stałe, ufność nieszczęśliwych nigdy ich nie zawiedzie. @Ps 9, 19",
+        "A Ty widzisz trud i boleść, patrzysz, by je wziąć w swoje ręce. Tobie się biedny poleca, Tyś opiekunem sieroty! @Ps 10, 14",
+        "Słowa Pańskie to słowa szczere, wypróbowane srebro, bez domieszki ziemi, siedmiokroć czyszczone. @Ps 12, 7",
+        "Toteż występni nie ostoją się na sądzie ani grzesznicy - w zgromadzeniu sprawiedliwych, bo Pan uznaje drogę sprawiedliwych, a droga występnych zaginie. @Ps 1, 5-6",
+        "On leczy złamanych na duchu i przewiązuje ich rany. On liczbę gwiazd oznacza, wszystkie je woła po imieniu. @Ps 147, 3-4",
+        "Pan przywraca wzrok niewidomym, Pan podnosi pochylonych, Pan miłuje sprawiedliwych. Pan strzeże przychodniów, chroni sierotę i wdowę, lecz na bezdroża kieruje występnych. @Ps 146,8-9",
+        "Pan jest łagodny i miłosierny, nieskory do gniewu i bardzo łaskawy. Pan jest dobry dla wszystkich i Jego miłosierdzie ogarnia wszystkie Jego dzieła. @Ps 145, 8-9",
+        "Królestwo Twoje królestwem wszystkich wieków, Twoje panowanie trwa przez wszystkie pokolenia. Pan jest wierny we wszystkich swych słowach i we wszystkich swoich dziełach święty. @Ps 145, 13",
+        "Zmiłuj się nade mną, Boże, w swojej łaskawości, w ogromie swego miłosierdzia wymaż moją nieprawość! Obmyj mnie zupełnie z mojej winy i oczyść mnie z grzechu mojego! @Ps 50, 3-4",
+        "Ja zaś jak oliwka, co kwitnie w domu Bożym, zaufam na wieki łaskawości Boga. @Ps 52, 10",
+        "Bóg spogląda z nieba na synów ludzkich, badając, czy jest wśród nich rozumny, który by szukał Boga. @Ps 53, 3",
+        "Wśród ludów będę chwalił Cię, Panie; zagram Ci wśród narodów, 11 bo Twoja łaskawość aż do niebios, a wierność Twoja po chmury! @Ps 57, 10-11",
+        "W każdym czasie Jemu ufaj, narodzie! Przed Nim serca wasze wylejcie: Bóg jest dla nas ucieczką! @Ps 62, 9",
+        "Boże, Ty Boże mój, Ciebie szukam; Ciebie pragnie moja dusza, za Tobą tęskni moje ciało, jak ziemia zeschła, spragniona, bez wody. @Ps 63, 2",
+        "Szczęśliwy, kogo wybierasz i przygarniasz: mieszka on w Twoich pałacach. Niech nas nasycą dobra Twego domu, świętość Twojego przybytku! @Ps 65, 5",
+      ];
+      var body = "";
+      var author = "";
 
-		/* latin-ext */
+      function selectQuote() {
+        var index = Math.floor(Math.random() * quotes.length);
+        var quote = quotes[index].split("@");
+        body = quote[0];
+        author = quote[1];
+        document.querySelector("#target").innerHTML = body;
+        document.getElementById("author").innerHTML = author;
+        console.log(body);
+        return true;
+      }
 
-		@font-face {
-			font-family: 'Metamorphous';
-			font-style: normal;
-			font-weight: 400;
-			src: local('Metamorphous'), url(https://fonts.gstatic.com/s/metamorphous/v7/Wnz8HA03aAXcC39ZEX5y133ENSqstTs.woff2) format('woff2');
-			unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-		}
+      selectQuote();
+      document.getElementById("action").addEventListener("click", selectQuote);
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-91285531-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-		/* latin */
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-		@font-face {
-			font-family: 'Metamorphous';
-			font-style: normal;
-			font-weight: 400;
-			src: local('Metamorphous'), url(https://fonts.gstatic.com/s/metamorphous/v7/Wnz8HA03aAXcC39ZEX5y133EOyqs.woff2) format('woff2');
-			unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-		}
-	</style>
-
-</head>
-
-<body>
-
-	<h1>z BIBLII</h1>
-	<h2>Kieruj się słowami Pisma Świętego, a nigdy nie zbłądzisz!<br> Wybierz Słowo Boże na dzień:</h2>
-	<button class="btn" id="action"><strong>Kliknij</strong></button>
-
-	<div class="quotes-box">
-		<p class="quote" id="target"></p>
-		<p class="author" id="author"></p>
-	</div>
-
-	<script>
-		document.body.innerHTML += '<div id="cookiesAlert" style="border-radius: .5rem .5rem 0 0;display:flex;align-items: center;padding-left:1rem;background:#ccc;color:black;height:28px;opacity:.7;position:fixed;left:11px;bottom:0;z-index:99999999;font-family:sans-serif;text-align:center;font-size:12px;">Ta strona używa plików cookies. <button style="font-size:14px;font-weight:900;border-top-right-radius:.5rem;padding:6px;border:none;background:#aaa;cursor:pointer;" id="acceptBtn" onclick="document.getElementById(\'cookiesAlert\').style.display = \'none\';">OK</button></div>';
-
-		function close() {
-			document.getElementById("cookiesAlert").style.color = "blue";
-		}
-	</script>
-
-	<script>
-		var quotes = ["O nic się już zbytnio nie troskajcie, ale w każdej sprawie wasze prośby przedstawiajcie Bogu w modlitwie i błaganiu z dziękczynieniem! A pokój Boży, który przewyższa wszelki umysł, będzie strzegł waszych serc i myśli w Chrystusie Jezusie. @Flp 4, 6-7",
-			"Niech się nie trwoży serce wasze. Wierzycie w Boga? I we Mnie wierzcie! @J 14,1",
-			"Pan podtrzymuje wszystkich, którzy padają i podnosi wszystkich zgnębionych. @Ps 145, 15",
-			"Cierpliwy do czasu dozna przykrości, ale później radość dla niego zakwitnie. @Syr 1, 23",
-			"Ja zaś jestem ubogi i nędzny, ale Pan troszczy sie o mnie. Ty jesteś wspomożycielem moim i wybawca; Boże mój, nie zwlekaj! @Ps 40, 18",
-			"Ufność, którą w Nim pokładamy, polega na przekonaniu, że wysłuchuje On wszystkich naszych próśb zgodnych z Jego wolą. A jeśli wiemy, że wysłuchuje wszystkich naszych próśb, pewni jesteśmy również posiadania tego, o cośmy Go prosili. @1 J 5, 14-15",
-			"Wszystkie troski wasze przerzućcie na Niego, gdyż Jemu zależy na was. @1 P 5, 7",
-			"Przewlekłe czekanie jest raną dla duszy, ziszczone pragnienie jest drzewem życia. @(Prz 13:12)",
-			"Proście, a będzie wam dane; szukajcie, a znajdziecie; kołaczcie, a otworzą wam. @(Mt 7:7)",
-			"Kto w drobnej rzeczy jest wierny, ten i w wielkiej będzie wierny; a kto w drobnej rzeczy jest nieuczciwy, ten i w wielkiej nieuczciwy będzie. @(Lu 16:10)",
-			"Albowiem zapłatą za grzech jest śmierć, a łaska przez Boga dana to życie wieczne w Chrystusie Jezusie, Panu naszym. @Rz 6, 23",
-			"Ci bowiem, którzy żyją według ciała, dążą do tego, czego chce ciało; ci zaś, którzy żyją według Ducha - do tego, czego chce Duch. Dążność bowiem ciała prowadzi do śmierci, dążność zaś Ducha - do życia i pokoju. @Rz 8, 5-6",
-			"Nikomu nie bądźcie nic dłużni poza wzajemną miłością. Kto bowiem miłuje bliźniego, wypełnił Prawo. @Rz 13, 8",
-			"Jahwe jest moim Pasterzem. Niczego mi nie zabraknie. @ Ps 23:1",
-			"Duszę moją pokrzepia. Wiedzie mnie szlakami prawości przez wzgląd na swe imię. @Ps 23:3",
-			"Zrzuć swe brzemię na Jahwe, a on cię wesprze. Nigdy nie pozwoli, by prawy się zachwiał. @Ps 55:22",
-			"Bojaźń Pańska jest początkiem mądrości. Wspaniała zapłata dla tych, co według niej postępują, a chwała Jego trwać będzie zawsze. @Ps. 111:10",
-			"Zaufaj Panu z całego swojego serca i nie polegaj na własnym rozumie! Pamiętaj o Nim na wszystkich swoich drogach, a On prostować będzie twoje ścieżki! @Prz 3, 5-6",
-			"Pan moją mocą i tarczą! Moje serce Jemu zaufało: Doznałem pomocy, więc moje serce się cieszy i pieśnią moją Go sławię. @Ps 28, 7",
-			"Bo Pan Bóg jest słońcem i tarczą: Pan hojnie darzy łaską i chwałą, nie odmawia dobrodziejstw postępującym nienagannie. @Ps 84, 12",
-			"Nawet wróbel dom sobie znajduje i jaskółka gniazdo, gdzie złoży swe pisklęta: przy Twoich ołtarzach, Panie Zastępów, mój Królu i mój Boże! @Ps 84, 4",
-			"Wierność z ziemi wyrośnie, a sprawiedliwość wychyli się z nieba. @Ps 85, 12",
-			"Albowiem On jest naszym Bogiem, a my ludem Jego pastwiska i owcami w Jego ręku. Obyście usłyszeli dzisiaj głos Jego: @Ps 95,7",
-			"Bo ubogi nie pójdzie w zapomnienie na stałe, ufność nieszczęśliwych nigdy ich nie zawiedzie. @Ps 9, 19",
-			"A Ty widzisz trud i boleść, patrzysz, by je wziąć w swoje ręce. Tobie się biedny poleca, Tyś opiekunem sieroty! @Ps 10, 14",
-			"Słowa Pańskie to słowa szczere, wypróbowane srebro, bez domieszki ziemi, siedmiokroć czyszczone. @Ps 12, 7",
-            "Toteż występni nie ostoją się na sądzie ani grzesznicy - w zgromadzeniu sprawiedliwych, bo Pan uznaje drogę sprawiedliwych, a droga występnych zaginie. @Ps 1, 5-6",
-            "On leczy złamanych na duchu i przewiązuje ich rany. On liczbę gwiazd oznacza, wszystkie je woła po imieniu. @Ps 147, 3-4",
-            "Pan przywraca wzrok niewidomym, Pan podnosi pochylonych, Pan miłuje sprawiedliwych. Pan strzeże przychodniów, chroni sierotę i wdowę, lecz na bezdroża kieruje występnych. @Ps 146,8-9",
-            "Pan jest łagodny i miłosierny, nieskory do gniewu i bardzo łaskawy. Pan jest dobry dla wszystkich i Jego miłosierdzie ogarnia wszystkie Jego dzieła. @Ps 145, 8-9",
-            "Królestwo Twoje królestwem wszystkich wieków, Twoje panowanie trwa przez wszystkie pokolenia. Pan jest wierny we wszystkich swych słowach i we wszystkich swoich dziełach święty. @Ps 145, 13",
-            "Zmiłuj się nade mną, Boże, w swojej łaskawości, w ogromie swego miłosierdzia wymaż moją nieprawość! Obmyj mnie zupełnie z mojej winy i oczyść mnie z grzechu mojego! @Ps 50, 3-4",
-            "Ja zaś jak oliwka, co kwitnie w domu Bożym, zaufam na wieki łaskawości Boga. @Ps 52, 10",
-            "Bóg spogląda z nieba na synów ludzkich, badając, czy jest wśród nich rozumny, który by szukał Boga. @Ps 53, 3",
-            "Wśród ludów będę chwalił Cię, Panie; zagram Ci wśród narodów, 11 bo Twoja łaskawość aż do niebios, a wierność Twoja po chmury! @Ps 57, 10-11",
-            "W każdym czasie Jemu ufaj, narodzie! Przed Nim serca wasze wylejcie: Bóg jest dla nas ucieczką! @Ps 62, 9",
-            "Boże, Ty Boże mój, Ciebie szukam; Ciebie pragnie moja dusza, za Tobą tęskni moje ciało, jak ziemia zeschła, spragniona, bez wody. @Ps 63, 2",
-            "Szczęśliwy, kogo wybierasz i przygarniasz: mieszka on w Twoich pałacach. Niech nas nasycą dobra Twego domu, świętość Twojego przybytku! @Ps 65, 5",
-		];
-		var body = '';
-		var author = '';
-
-		function selectQuote() {
-			var index = Math.floor(Math.random() * quotes.length);
-			var quote = quotes[index].split('@');
-			body = quote[0];
-			author = quote[1];
-			document.querySelector('#target').innerHTML = body;
-			document.getElementById('author').innerHTML = author;
-			console.log(body);
-			return true;
-		}
-
-		selectQuote();
-		document.getElementById('action').addEventListener('click', selectQuote);
-	</script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-91285531-2"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag('js', new Date());
-
-		gtag('config', 'UA-91285531-2');
-	</script>
-
-</body>
-
+      gtag("config", "UA-91285531-2");
+    </script>
+  </body>
 </html>

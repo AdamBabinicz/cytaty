@@ -2,4 +2,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: https://slowoboze.000webhostapp.com/sitemap.xml
+Sitemap: https://slowoboze.netlify.app/sitemap.xml
